@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Хедер */
+.header {
+    width: 100vw;
+    height: 100px;
+    background: #0000b3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.header__logo-svg {
+    height: 60px;
+}
+
+.header__nav {
+    margin-right: 100px;
+}
+
+.header__list {
+    margin-top: revert;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.header__link {
+    color: #fff;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.header__link:hover {
+    opacity: 0.7;
+}
+
+/* Кнопки */
+.btn-primary {
+    background-color: #0000b3;
+    border-color: #0000b3;
+}
+
+.btn-primary:hover {
+    background-color: #001f7d;
+    border-color: #001f7d;
+}
+
+/* Классы для списка парковок */
+.parking-list__item {
+    background: #fff;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: none;
+    transition: box-shadow 0.15s;
+}
+
+.parking-list__item:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+}
+
+.parking-list__img {
+    background: #f3f3f3;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 18px;
+    flex-shrink: 0;
+}
+
+.parking-list__name {
+    color: #1756e3;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#parkingList {
+    max-height: calc(100vh - 202px);
+    overflow-y: auto;
+}
+
+.details-container {
+    margin-top: 20px;
+}
+
+.booking-form {
+    position: sticky;
+    top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 300px; 
+}
+
+/* Бронирования */
+
+.my-bookings__title {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.my-bookings__list-col {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.my-bookings__item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(30,30,60,0.10);
+    padding: 28px 32px;
+    border: none;
+}
+
+.my-bookings__img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-right: 32px;
+    flex-shrink: 0;
+    background: #f3f3f3;
+}
+
+.my-bookings__name {
+    color: #1756e3;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.my-bookings__address {
+    font-size: 20px;
+    margin: 0 0 18px 0;
+}
+
+.my-bookings__dates {
+    color: #222;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    display: flex;
+    gap: 20px;
+}
+
